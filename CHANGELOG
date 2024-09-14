@@ -1,0 +1,33 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](http://semver.org/).
+
+## 04.06.2024
+
+### Added
+- Setup templates for assignment 1.09
+
+## 04.13.2024
+
+### Added
+- Interactive pokemon battle loop added inside wildpokemonPopup
+- Flee feature implemented
+- Interface improvement
+- Fighting option fully implemented
+
+## 04.14.2024
+
+### Added
+- 'B' command to access bag outside of battle added
+- Pokecenter & pokemart interface added, feature fully implemented
+
+### Fixed
+- wildpokemonPopup bug fix
+
+## 04.16.2024
+
+### Added
+- Interactive pokemon battle loop added inside pokebattlePopup
+- Move priority and pokemon speed compare for first turn implemented
+- All feature fully implemented
