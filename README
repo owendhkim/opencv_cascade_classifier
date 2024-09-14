@@ -42,7 +42,7 @@ own robust(not really) cascade classifier model.
     Change it to
     include_directories(/your/filepath/to/opencv4)
 
-3. Cd into build directory and run $ cmake ..
+3. mkdir build directory and cd into it, then run $ cmake ..
 
     This is going to scan the one upper directory from pwd and find
     cmake file and run them.
