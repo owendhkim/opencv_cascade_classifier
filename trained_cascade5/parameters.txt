@@ -1,0 +1,25 @@
+/Users/owen/Downloads/opencv-3.4.15/build/bin/opencv_traincascade -data trained_cascade5/ -vec positive.vec -bg neg_list.txt -precalcValBufSize 6000 -precalcIdxBufSize 6000 -numPos 500 -numNeg 1500 -numStages 12 -w 24 -h 24 -maxFalseAlarmRate 0.2 -minHitRate 0.99
+
+
+PARAMETERS:
+cascadeDirName: trained_cascade5/
+vecFileName: positive.vec
+bgFileName: neg_list.txt
+numPos: 500
+numNeg: 1500
+numStages: 12
+precalcValBufSize[Mb] : 6000
+precalcIdxBufSize[Mb] : 6000
+acceptanceRatioBreakValue : -1
+stageType: BOOST
+featureType: HAAR
+sampleWidth: 24
+sampleHeight: 24
+boostType: GAB
+minHitRate: 0.99
+maxFalseAlarmRate: 0.2
+weightTrimRate: 0.95
+maxDepth: 1
+maxWeakCount: 100
+mode: BASIC
+Number of unique features given windowSize [24,24] : 162336
