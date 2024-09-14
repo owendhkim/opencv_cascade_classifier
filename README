@@ -1,5 +1,3 @@
-# Assignment1.2 - Object detection
-
 I have studied and utilized opencv library to make a face detection program.
 Line by line detailed explantion of the code is in main.cpp as a comment.
 Explantions/learnings about the library is organized in the cascadeClassifier_notes.pdf.
