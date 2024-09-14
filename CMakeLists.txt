@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+set (CMAKE_CXX_STANDARD 11)
+project(main)
+find_package(OpenCV REQUIRED)
+add_executable(main main.cpp)
+target_link_libraries(main ${OpenCV_LIBS})
+include_directories(/usr/local/Cellar/opencv/4.9.0_7/include/opencv4)
