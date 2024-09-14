@@ -1,0 +1,54 @@
+# Assignment1.2 - Object detection
+
+I have studied and utilized opencv library to make a face detection program.
+Line by line detailed explantion of the code is in main.cpp as a comment.
+Explantions/learnings about the library is organized in the cascadeClassifier_notes.pdf.
+
+Basic structure of main.cpp is from OpenCV's Cascade Classifier tutorial,
+I have modified and opimized it to fit my purpose of face detection by applying
+image processing algorithms like gaussian blur, converting to greyscale, erroding,
+dialating, and etc.
+
+Using cascade trainer, I trained my own cascade classifier with various angles
+of human face so that it detects the side profile of the human face, and the 
+tilted angle of the face as well. I grabbed the positive samples of open source 
+data from kaggle, using beautiful soup python script I scraped negative samples 
+from gettyimages.ca myself.
+
+Most of my time was spent on learning the library, learning various image processing 
+algorithms, learning how to use opencv command line tools like ./opencv_createsamples.exe,
+./opencv_traincascade.exe, and ./opencv_annotation.exe. Then, using those tools, 
+I cleaned and prepared my data in a required format and trained them to generate my
+own robust(not really) cascade classifier model.
+
+
+# How to run
+
+1. Download opencv for your operating system
+
+    https://opencv.org/releases/
+    and
+    https://cmake.org/download/
+
+    or you can use package manegers like homebrew on mac 
+    $ brew install opencv   $ brew install cmake
+
+2. Modify your CMakeLists.txt to edit filepath to opencv library
+
+    Depending on the OS and the version of the opencv you've downloaded,
+    filepath will vary
+    
+    My filepath looks like this
+    include_directories(/usr/local/Cellar/opencv/4.9.0_7/include/opencv4)
+
+    Change it to
+    include_directories(/your/filepath/to/opencv4)
+
+3. Cd into build directory and run $ cmake ..
+
+    This is going to scan the one upper directory from pwd and find
+    cmake file and run them.
+
+    Once it has been built with cmake you can run make inside the
+    build directory to compile your main.cpp file, you don't have
+    to run cmake again every time.
